@@ -40,8 +40,8 @@ namespace BarcodeGenerator
 
         private void Print_Page(object sender, PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(pictureBox1.Image, 100, 100, pictureBox1.Width, pictureBox1.Height);
-            e.Graphics.DrawString(textBox1.Text, new Font("Arial", 16, FontStyle.Regular), Brushes.Black, new Point(100, 300));
+            e.Graphics.DrawImage(pictureBox1.Image, 100, 100, 200, 100);
+            e.Graphics.DrawString(textBox1.Text, new Font("Arial", 16, FontStyle.Regular), Brushes.Black, new Point(100, 250));
         }
     }
 }
