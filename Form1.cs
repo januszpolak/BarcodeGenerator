@@ -15,6 +15,7 @@ namespace BarcodeGenerator
         private void button1_Click(object sender, EventArgs e)
         {
             generateBarcode();
+            
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -42,6 +43,7 @@ namespace BarcodeGenerator
             }
 
             label1.Text = textBox1.Text;
+            textBox1.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
