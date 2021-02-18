@@ -43,7 +43,7 @@ namespace BarcodeGenerator
             }
 
             label1.Text = textBox1.Text;
-            textBox1.Text = "";
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,6 +51,12 @@ namespace BarcodeGenerator
             printDocument1.PrinterSettings = printDialog1.PrinterSettings;
             printDocument1.Print();
 
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
+            label1.Text = "";
+            textBox1.Text = "";
         }
 
         private void Print_Page(object sender, PrintPageEventArgs e)
